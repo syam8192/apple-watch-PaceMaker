@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17A2E09F2335E09000222697 /* ペースメイカー.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 17A2E09E2335E09000222697 /* ペースメイカー.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		17A2E0A52335E09000222697 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A2E0A32335E09000222697 /* Interface.storyboard */; };
+		17A2E0A72335E09100222697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A2E0A62335E09100222697 /* Assets.xcassets */; };
+		17A2E0AE2335E09100222697 /* PaceMaker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 17A2E0AD2335E09100222697 /* PaceMaker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		17A2E0B32335E09100222697 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A2E0B22335E09100222697 /* InterfaceController.swift */; };
+		17A2E0B52335E09100222697 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A2E0B42335E09100222697 /* ExtensionDelegate.swift */; };
+		17A2E0B72335E09200222697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A2E0B62335E09200222697 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17A2E0A02335E09000222697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17A2E0942335E09000222697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17A2E09D2335E09000222697;
+			remoteInfo = "PaceMaker WatchKit App";
+		};
+		17A2E0AF2335E09100222697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17A2E0942335E09000222697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17A2E0AC2335E09100222697;
+			remoteInfo = "PaceMaker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		17A2E0BE2335E09200222697 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				17A2E0AE2335E09100222697 /* PaceMaker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17A2E0C22335E09200222697 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				17A2E09F2335E09000222697 /* ペースメイカー.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1731E9D22335FBC900060464 /* ペースメイカー.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ペースメイカー.entitlements"; sourceTree = "<group>"; };
+		17A2E09A2335E09000222697 /* PaceMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaceMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A2E09E2335E09000222697 /* ペースメイカー.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ペースメイカー.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A2E0A42335E09000222697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		17A2E0A62335E09100222697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17A2E0A82335E09100222697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A2E0AD2335E09100222697 /* PaceMaker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PaceMaker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A2E0B22335E09100222697 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		17A2E0B42335E09100222697 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		17A2E0B62335E09200222697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17A2E0B82335E09200222697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17A2E0AA2335E09100222697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17A2E0932335E09000222697 = {
+			isa = PBXGroup;
+			children = (
+				17A2E0A22335E09000222697 /* PaceMaker WatchKit App */,
+				17A2E0B12335E09100222697 /* PaceMaker WatchKit Extension */,
+				17A2E09B2335E09000222697 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17A2E09B2335E09000222697 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17A2E09A2335E09000222697 /* PaceMaker.app */,
+				17A2E09E2335E09000222697 /* ペースメイカー.app */,
+				17A2E0AD2335E09100222697 /* PaceMaker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17A2E0A22335E09000222697 /* PaceMaker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1731E9D22335FBC900060464 /* ペースメイカー.entitlements */,
+				17A2E0A32335E09000222697 /* Interface.storyboard */,
+				17A2E0A62335E09100222697 /* Assets.xcassets */,
+				17A2E0A82335E09100222697 /* Info.plist */,
+			);
+			path = "PaceMaker WatchKit App";
+			sourceTree = "<group>";
+		};
+		17A2E0B12335E09100222697 /* PaceMaker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				17A2E0B22335E09100222697 /* InterfaceController.swift */,
+				17A2E0B42335E09100222697 /* ExtensionDelegate.swift */,
+				17A2E0B62335E09200222697 /* Assets.xcassets */,
+				17A2E0B82335E09200222697 /* Info.plist */,
+			);
+			path = "PaceMaker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17A2E0992335E09000222697 /* PaceMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17A2E0C32335E09200222697 /* Build configuration list for PBXNativeTarget "PaceMaker" */;
+			buildPhases = (
+				17A2E0982335E09000222697 /* Resources */,
+				17A2E0C22335E09200222697 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17A2E0A12335E09000222697 /* PBXTargetDependency */,
+			);
+			name = PaceMaker;
+			productName = PaceMaker;
+			productReference = 17A2E09A2335E09000222697 /* PaceMaker.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		17A2E09D2335E09000222697 /* PaceMaker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17A2E0BF2335E09200222697 /* Build configuration list for PBXNativeTarget "PaceMaker WatchKit App" */;
+			buildPhases = (
+				17A2E09C2335E09000222697 /* Resources */,
+				17A2E0BE2335E09200222697 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17A2E0B02335E09100222697 /* PBXTargetDependency */,
+			);
+			name = "PaceMaker WatchKit App";
+			productName = "PaceMaker WatchKit App";
+			productReference = 17A2E09E2335E09000222697 /* ペースメイカー.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		17A2E0AC2335E09100222697 /* PaceMaker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17A2E0BB2335E09200222697 /* Build configuration list for PBXNativeTarget "PaceMaker WatchKit Extension" */;
+			buildPhases = (
+				17A2E0A92335E09100222697 /* Sources */,
+				17A2E0AA2335E09100222697 /* Frameworks */,
+				17A2E0AB2335E09100222697 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PaceMaker WatchKit Extension";
+			productName = "PaceMaker WatchKit Extension";
+			productReference = 17A2E0AD2335E09100222697 /* PaceMaker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17A2E0942335E09000222697 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "山上忍";
+				TargetAttributes = {
+					17A2E0992335E09000222697 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					17A2E09D2335E09000222697 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					17A2E0AC2335E09100222697 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 17A2E0972335E09000222697 /* Build configuration list for PBXProject "PaceMaker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17A2E0932335E09000222697;
+			productRefGroup = 17A2E09B2335E09000222697 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17A2E0992335E09000222697 /* PaceMaker */,
+				17A2E09D2335E09000222697 /* PaceMaker WatchKit App */,
+				17A2E0AC2335E09100222697 /* PaceMaker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17A2E0982335E09000222697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17A2E09C2335E09000222697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A2E0A72335E09100222697 /* Assets.xcassets in Resources */,
+				17A2E0A52335E09000222697 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17A2E0AB2335E09100222697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A2E0B72335E09200222697 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17A2E0A92335E09100222697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A2E0B52335E09100222697 /* ExtensionDelegate.swift in Sources */,
+				17A2E0B32335E09100222697 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17A2E0A12335E09000222697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17A2E09D2335E09000222697 /* PaceMaker WatchKit App */;
+			targetProxy = 17A2E0A02335E09000222697 /* PBXContainerItemProxy */;
+		};
+		17A2E0B02335E09100222697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17A2E0AC2335E09100222697 /* PaceMaker WatchKit Extension */;
+			targetProxy = 17A2E0AF2335E09100222697 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17A2E0A32335E09000222697 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17A2E0A42335E09000222697 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17A2E0B92335E09200222697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "ペースメイカー";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17A2E0BA2335E09200222697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "ペースメイカー";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17A2E0BC2335E09200222697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39KT36ZXK5;
+				INFOPLIST_FILE = "PaceMaker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syam64.pacemaker.PaceMaker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		17A2E0BD2335E09200222697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39KT36ZXK5;
+				INFOPLIST_FILE = "PaceMaker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syam64.pacemaker.PaceMaker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		17A2E0C02335E09200222697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "PaceMaker WatchKit App/ペースメイカー.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39KT36ZXK5;
+				IBSC_MODULE = PaceMaker_WatchKit_Extension;
+				INFOPLIST_FILE = "PaceMaker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syam64.pacemaker.PaceMaker.watchkitapp;
+				PRODUCT_NAME = "ペースメイカー";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		17A2E0C12335E09200222697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "PaceMaker WatchKit App/ペースメイカー.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39KT36ZXK5;
+				IBSC_MODULE = PaceMaker_WatchKit_Extension;
+				INFOPLIST_FILE = "PaceMaker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syam64.pacemaker.PaceMaker.watchkitapp;
+				PRODUCT_NAME = "ペースメイカー";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		17A2E0C42335E09200222697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39KT36ZXK5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syam64.pacemaker.PaceMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		17A2E0C52335E09200222697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39KT36ZXK5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syam64.pacemaker.PaceMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17A2E0972335E09000222697 /* Build configuration list for PBXProject "PaceMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17A2E0B92335E09200222697 /* Debug */,
+				17A2E0BA2335E09200222697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17A2E0BB2335E09200222697 /* Build configuration list for PBXNativeTarget "PaceMaker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17A2E0BC2335E09200222697 /* Debug */,
+				17A2E0BD2335E09200222697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17A2E0BF2335E09200222697 /* Build configuration list for PBXNativeTarget "PaceMaker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17A2E0C02335E09200222697 /* Debug */,
+				17A2E0C12335E09200222697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17A2E0C32335E09200222697 /* Build configuration list for PBXNativeTarget "PaceMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17A2E0C42335E09200222697 /* Debug */,
+				17A2E0C52335E09200222697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17A2E0942335E09000222697 /* Project object */;
+}

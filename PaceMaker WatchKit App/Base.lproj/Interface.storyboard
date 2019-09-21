@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14868" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14643"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ペースメイカー" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="t2m-pr-vNU">
+                            <items>
+                                <group width="1" alignment="left" id="DQA-oZ-PIa">
+                                    <items>
+                                        <label alignment="left" verticalAlignment="bottom" text="999" id="nZj-zp-1My">
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="44"/>
+                                        </label>
+                                        <label alignment="left" verticalAlignment="bottom" text="BPM" id="IJk-6G-rdt">
+                                            <fontDescription key="font" type="system" pointSize="20"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="6co-XU-vRZ">
+                                    <items>
+                                        <button width="0.5" alignment="left" title="－" id="21b-Rc-8Mu">
+                                            <fontDescription key="font" type="boldSystem" pointSize="41"/>
+                                            <connections>
+                                                <action selector="onClickedDown" destination="AgC-eL-Hgc" id="XsN-Q4-luz"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.5" alignment="left" title="＋" id="84I-eS-gfY">
+                                            <fontDescription key="font" type="boldSystem" pointSize="41"/>
+                                            <connections>
+                                                <action selector="onClickedUp" destination="AgC-eL-Hgc" id="wsy-vo-ltC"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <switch width="100" alignment="center" verticalAlignment="bottom" title="BEAT" id="mpi-cn-9OL">
+                                    <connections>
+                                        <action selector="switchActionWithValue:" destination="AgC-eL-Hgc" id="huS-Gv-grL"/>
+                                    </connections>
+                                </switch>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="beatSwitch" destination="mpi-cn-9OL" id="Wpn-P8-oBP"/>
+                        <outlet property="label" destination="nZj-zp-1My" id="6CI-lZ-6Jg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="30"/>
+        </scene>
+    </scenes>
+</document>
