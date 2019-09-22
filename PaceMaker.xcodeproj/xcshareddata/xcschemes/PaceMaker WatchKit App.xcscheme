@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "17A2E09D2335E09000222697"
-               BuildableName = "&#x30d8;&#x309a;&#x30fc;&#x30b9;&#x30e1;&#x30a4;&#x30ab;&#x30fc;.app"
+               BuildableName = "Pace Maker.app"
                BlueprintName = "PaceMaker WatchKit App"
                ReferencedContainer = "container:PaceMaker.xcodeproj">
             </BuildableReference>
@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "17A2E0992335E09000222697"
-               BuildableName = "PaceMaker.app"
+               BuildableName = "Pace Maker.app"
                BlueprintName = "PaceMaker"
                ReferencedContainer = "container:PaceMaker.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "17A2E09D2335E09000222697"
-            BuildableName = "&#x30d8;&#x309a;&#x30fc;&#x30b9;&#x30e1;&#x30a4;&#x30ab;&#x30fc;.app"
+            BuildableName = "Pace Maker.app"
             BlueprintName = "PaceMaker WatchKit App"
             ReferencedContainer = "container:PaceMaker.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "17A2E09D2335E09000222697"
-            BuildableName = "&#x30d8;&#x309a;&#x30fc;&#x30b9;&#x30e1;&#x30a4;&#x30ab;&#x30fc;.app"
+            BuildableName = "Pace Maker.app"
             BlueprintName = "PaceMaker WatchKit App"
             ReferencedContainer = "container:PaceMaker.xcodeproj">
          </BuildableReference>
@@ -89,7 +89,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "17A2E09D2335E09000222697"
-            BuildableName = "&#x30d8;&#x309a;&#x30fc;&#x30b9;&#x30e1;&#x30a4;&#x30ab;&#x30fc;.app"
+            BuildableName = "Pace Maker.app"
             BlueprintName = "PaceMaker WatchKit App"
             ReferencedContainer = "container:PaceMaker.xcodeproj">
          </BuildableReference>

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17A2E09F2335E09000222697 /* ペースメイカー.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 17A2E09E2335E09000222697 /* ペースメイカー.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		17A2E09F2335E09000222697 /* Pace Maker.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 17A2E09E2335E09000222697 /* Pace Maker.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		17A2E0A52335E09000222697 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A2E0A32335E09000222697 /* Interface.storyboard */; };
 		17A2E0A72335E09100222697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A2E0A62335E09100222697 /* Assets.xcassets */; };
 		17A2E0AE2335E09100222697 /* PaceMaker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 17A2E0AD2335E09100222697 /* PaceMaker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -51,7 +51,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				17A2E09F2335E09000222697 /* ペースメイカー.app in Embed Watch Content */,
+				17A2E09F2335E09000222697 /* Pace Maker.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,8 +60,8 @@
 
 /* Begin PBXFileReference section */
 		1731E9D22335FBC900060464 /* ペースメイカー.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ペースメイカー.entitlements"; sourceTree = "<group>"; };
-		17A2E09A2335E09000222697 /* PaceMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaceMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		17A2E09E2335E09000222697 /* ペースメイカー.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ペースメイカー.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A2E09A2335E09000222697 /* Pace Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pace Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A2E09E2335E09000222697 /* Pace Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pace Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A2E0A42335E09000222697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		17A2E0A62335E09100222697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17A2E0A82335E09100222697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 		17A2E09B2335E09000222697 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				17A2E09A2335E09000222697 /* PaceMaker.app */,
-				17A2E09E2335E09000222697 /* ペースメイカー.app */,
+				17A2E09A2335E09000222697 /* Pace Maker.app */,
+				17A2E09E2335E09000222697 /* Pace Maker.app */,
 				17A2E0AD2335E09100222697 /* PaceMaker WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -141,7 +141,7 @@
 			);
 			name = PaceMaker;
 			productName = PaceMaker;
-			productReference = 17A2E09A2335E09000222697 /* PaceMaker.app */;
+			productReference = 17A2E09A2335E09000222697 /* Pace Maker.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		17A2E09D2335E09000222697 /* PaceMaker WatchKit App */ = {
@@ -158,7 +158,7 @@
 			);
 			name = "PaceMaker WatchKit App";
 			productName = "PaceMaker WatchKit App";
-			productReference = 17A2E09E2335E09000222697 /* ペースメイカー.app */;
+			productReference = 17A2E09E2335E09000222697 /* Pace Maker.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		17A2E0AC2335E09100222697 /* PaceMaker WatchKit Extension */ = {
@@ -410,7 +410,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.syam64.pacemaker.PaceMaker.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = "PaceMaker WatchKit Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -432,7 +432,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.syam64.pacemaker.PaceMaker.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = "PaceMaker WatchKit Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -452,7 +452,7 @@
 				IBSC_MODULE = PaceMaker_WatchKit_Extension;
 				INFOPLIST_FILE = "PaceMaker WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.syam64.pacemaker.PaceMaker.watchkitapp;
-				PRODUCT_NAME = "ペースメイカー";
+				PRODUCT_NAME = "Pace Maker";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -472,7 +472,7 @@
 				IBSC_MODULE = PaceMaker_WatchKit_Extension;
 				INFOPLIST_FILE = "PaceMaker WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.syam64.pacemaker.PaceMaker.watchkitapp;
-				PRODUCT_NAME = "ペースメイカー";
+				PRODUCT_NAME = "Pace Maker";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -489,7 +489,7 @@
 				DEVELOPMENT_TEAM = 39KT36ZXK5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syam64.pacemaker.PaceMaker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pace Maker";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -502,7 +502,7 @@
 				DEVELOPMENT_TEAM = 39KT36ZXK5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syam64.pacemaker.PaceMaker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pace Maker";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
