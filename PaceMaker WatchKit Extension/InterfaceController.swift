@@ -13,9 +13,29 @@ import CoreMotion
 
 class InterfaceController: WKInterfaceController {
 
-    var bpm: Int = 120
+    var extend: Double = 0.0
     var timer: Timer?
     var session: WKExtendedRuntimeSession?
+    
+    var _bpm: Int = 120
+    var bpm: Int {
+        get {
+            return _bpm
+        }
+        set (value) {
+            if value > 250 {
+                _bpm = 250
+                WKInterfaceDevice.current().play(WKHapticType.failure)
+                return
+            }
+            if value < 1 {
+                _bpm = 1
+                WKInterfaceDevice.current().play(WKHapticType.failure)
+                return
+            }
+            _bpm = value
+        }
+    }
     
     @IBOutlet var label: WKInterfaceLabel!
     @IBOutlet var beatSwitch: WKInterfaceSwitch!
@@ -36,17 +56,20 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        self.crownSequencer.delegate = self
+        self.crownSequencer.focus()
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+        self.crownSequencer.resignFocus()
     }
 
     private func start() {
         timer?.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval:  60 / TimeInterval(bpm), repeats: true) { _ in
-            WKInterfaceDevice.current().play(WKHapticType(rawValue: 6)!)
+            WKInterfaceDevice.current().play(WKHapticType.start)
         }
     }
     
@@ -99,11 +122,34 @@ extension InterfaceController: WKExtendedRuntimeSessionDelegate {
     
     func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
         beatSwitch.setOn(false)
+        session?.invalidate()
+        session = nil
         stop()
     }
 
     func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason, error: Error?) {
         beatSwitch.setOn(false)
+        session?.invalidate()
+        session = nil
         stop()
     }
+}
+
+extension InterfaceController: WKCrownDelegate {
+    
+    func crownDidRotate(_ crownSequencer: WKCrownSequencer?, rotationalDelta: Double) {
+        extend += rotationalDelta * 16;
+        let d = trunc(extend)
+        if d != 0 {
+            bpm += Int(d)
+            extend -= d
+            label?.setText("\(bpm)")
+        }
+    }
+
+    func crownDidBecomeIdle(_ crownSequencer: WKCrownSequencer?) {
+        update()
+        extend = 0.0
+    }
+
 }
